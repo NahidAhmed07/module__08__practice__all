@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photo gallary</title>
+  <script src="https://kit.fontawesome.com/acea1fdaa1.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+      margin: 0;
+      background: rgb(92, 92, 92);
+      z-index: 1;
+    }
+    .navbar{
+      display: flex;
+      padding: 0 30px;
+      justify-content: space-between;
+      background: #c5c5c5;
+      height: 50px;
+      align-items: center;
+    }
+
+    .navbar a{
+      margin: 20px;
+      color:#070707;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .navbar a:hover{
+      color: #3b3b3b;
+    }
+
+    h1{
+      text-align:center;
+      color: #ffffff;
+    }
+    .photo-gallary{
+      display: flex;
+      justify-content:space-evenly;
+      padding: 2% ;
+      flex-wrap: wrap;
+    }
+    .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.8s ease-in-out;
+      
+    }
+    .img img{
+      width: 100%;
+      
+    }
+    .photo-box{
+      min-width: 200px;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .text h4{
+     margin: 5px 0;
+    }
+    .text{
+      position: absolute;
+      padding: 0 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      width: 100%;
+      color: #ffffff;
+      background: linear-gradient(0deg, rgba(8,8,8,0.8578781854538691) 6%, rgba(6,6,6,0.6533963927367823) 37%, rgba(6,6,6,0.11278014623818278) 75%, rgba(6,6,6,0) 99%);
+      bottom: -120px;
+      height:0px;
+      transition: height 0.8s ease-in-out, width 0.8s ease-in-out, bottom 0.8s ease-in-out;
+    }
+    .photo-box:hover .img{
+      transform: scale(1.1);
+    }
+    .photo-box:hover .text{
+      height: 100%;
+      bottom: -10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-item">
+      <a href="">home</a>
+      <a href="">about</a>
+      <a href="">more</a>
+      <a href="">card</a>
+      <a href="">photo</a>
+    </div>
+    <div class="nav-icon">
+      <a href=""><i class="fas fa-address-book"></i></a>
+      <a href=""><i class="fas fa-sign-out-alt"></i></i></a>
+
+    </div>
+    
+  </nav>
+  <h1> This is a simple Photo Gallary</h1>
+
+  <section id="gallary">
+    <div class="photo-gallary">
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat2.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat5.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title4</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat2.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat5.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title4</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat2.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat3.jpeg" alt=""></div>
+        <div class="text">
+          <h4>Photo title3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+      <div class="photo-box">
+        <div class="img"><img src="./images/cat5.jpg" alt=""></div>
+        <div class="text">
+          <h4>Photo title4</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

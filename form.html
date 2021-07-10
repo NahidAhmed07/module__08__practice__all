@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <script src="https://kit.fontawesome.com/acea1fdaa1.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+      margin: 0;
+    }
+    .navbar{
+      display: flex;
+      padding: 0 30px;
+      justify-content: space-between;
+      background: #c5c5c5;
+      height: 50px;
+      align-items: center;
+    }
+
+    .navbar a{
+      margin: 20px;
+      color:#070707;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .navbar a:hover{
+      color: #3b3b3b;
+    }
+    #main{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    .my-form{
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      border: 1px solid rgb(156, 156, 156);
+    }
+    h3{
+      text-align: center;
+    }
+
+    input, button{
+      margin: 6px;
+      font-size: 1rem;
+      padding: 5px;
+    }
+
+    input:focus{
+      outline: none;
+    }
+    button{
+      background: #bd7b01;
+      color:#fff;
+      border: none;
+    }
+    button:hover{
+      background:#d39b01;}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-item">
+      <a href="">home</a>
+      <a href="">about</a>
+      <a href="">more</a>
+      <a href="">card</a>
+      <a href="">photo</a>
+    </div>
+    <div class="nav-icon">
+      <a href=""><i class="fas fa-address-book"></i></a>
+      <a href=""><i class="fas fa-sign-out-alt"></i></i></a>
+
+    </div>
+    
+  </nav>
+
+
+  <section id="main">
+    <form action="" class="my-form">
+      <h3>Login Form</h3>
+      <input type="email" name="email" required placeholder="Enter your Email" >
+      <input type="password" name="password" required placeholder="Enter your Password">
+      <button type="submit"> Sign in</button>
+    </form>
+  </section>
+</body>
+</html>
